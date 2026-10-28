@@ -50,6 +50,7 @@ object WorkshopApp extends IOWebApp:
     Widget("Dorothy", "oz", oz),
     Widget("How fast can you overflow the Fibonacci number?", "thomas", fibonacciGame),
     Widget("Cph traffic light", "traffic", traffic),
+    Widget("Echo", "echo", echo),
     Widget("Exponentials", "exponentials", exponentials),
     Widget("Fibonacci", "fibonacci", fibonacci),
     Widget("Lag Test", "lag-test", lagTest)
