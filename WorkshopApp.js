@@ -1333,8 +1333,19 @@ function $isArrayOf_Lcalico_html_Children$ListResourceSignalModifier(obj, depth)
 function $asArrayOf_Lcalico_html_Children$ListResourceSignalModifier(obj, depth) {
   return (($isArrayOf_Lcalico_html_Children$ListResourceSignalModifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcalico.html.Children$ListResourceSignalModifier;", depth));
 }
+/** @constructor */
+function $c_Lcalico_html_Children$ResourceListSignalModifier(children) {
+  this.Lcalico_html_Children$ResourceListSignalModifier__f_children = null;
+  this.Lcalico_html_Children$ResourceListSignalModifier__f_children = children;
+}
+$c_Lcalico_html_Children$ResourceListSignalModifier.prototype = new $h_O();
+$c_Lcalico_html_Children$ResourceListSignalModifier.prototype.constructor = $c_Lcalico_html_Children$ResourceListSignalModifier;
+/** @constructor */
+function $h_Lcalico_html_Children$ResourceListSignalModifier() {
+}
+$h_Lcalico_html_Children$ResourceListSignalModifier.prototype = $c_Lcalico_html_Children$ResourceListSignalModifier.prototype;
 function $as_Lcalico_html_Children$ResourceListSignalModifier(obj) {
-  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "calico.html.Children$ResourceListSignalModifier"));
+  return (((obj instanceof $c_Lcalico_html_Children$ResourceListSignalModifier) || (obj === null)) ? obj : $throwClassCastException(obj, "calico.html.Children$ResourceListSignalModifier"));
 }
 function $isArrayOf_Lcalico_html_Children$ResourceListSignalModifier(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcalico_html_Children$ResourceListSignalModifier)));
@@ -1342,9 +1353,12 @@ function $isArrayOf_Lcalico_html_Children$ResourceListSignalModifier(obj, depth)
 function $asArrayOf_Lcalico_html_Children$ResourceListSignalModifier(obj, depth) {
   return (($isArrayOf_Lcalico_html_Children$ResourceListSignalModifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcalico.html.Children$ResourceListSignalModifier;", depth));
 }
+var $d_Lcalico_html_Children$ResourceListSignalModifier = new $TypeData().initClass($c_Lcalico_html_Children$ResourceListSignalModifier, "calico.html.Children$ResourceListSignalModifier", ({
+  Lcalico_html_Children$ResourceListSignalModifier: 1
+}));
 function $f_Lcalico_html_ChildrenModifiers__$init$__V($thiz) {
   new $c_Lcalico_html_ChildrenModifiers$$anon$1($thiz);
-  new $c_Lcalico_html_ChildrenModifiers$$anon$2($thiz);
+  $thiz.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$_forResourceListSignalChildren = new $c_Lcalico_html_ChildrenModifiers$$anon$2($thiz);
 }
 function $p_Lcalico_html_ChildrenModifiers__impl__Lorg_scalajs_dom_Node__Lfs2_concurrent_Signal__Lcats_effect_kernel_Resource($thiz, n, children) {
   var this$20 = $n($n(children).getAndDiscreteUpdates__Lcats_effect_kernel_GenConcurrent__Lcats_effect_kernel_Resource($thiz.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$F));
@@ -1585,6 +1599,16 @@ function $f_Lcalico_html_GlobalEventProps__onChange__Lcalico_html_EventProp($thi
     return $n(_$20$1).map__F1__Lfs2_Stream(f);
   })));
 }
+function $f_Lcalico_html_GlobalEventProps__onInput__Lcalico_html_EventProp($thiz) {
+  var f = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((e) => {
+    var F = $thiz.Lcalico_html_Html__f_calico$html$GlobalEventProps$$x$1;
+    return new $c_Lfs2_dom_WrappedEvent(e, F);
+  }));
+  return new $c_Lcalico_html_EventProp("input", new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$20) => {
+    var _$20$1 = $as_Lfs2_Stream(_$20);
+    return $n(_$20$1).map__F1__Lfs2_Stream(f);
+  })));
+}
 /** @constructor */
 function $c_Lcalico_html_HtmlAttr(key, encode) {
   this.Lcalico_html_HtmlAttr__f_key = null;
@@ -1719,6 +1743,28 @@ function $isArrayOf_Lcalico_html_Modifier(obj, depth) {
 function $asArrayOf_Lcalico_html_Modifier(obj, depth) {
   return (($isArrayOf_Lcalico_html_Modifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcalico.html.Modifier;", depth));
 }
+/** @constructor */
+function $c_Lcalico_html_Modifier$() {
+  this.Lcalico_html_Modifier$__f__forUnit = null;
+  $n_Lcalico_html_Modifier$ = this;
+  this.Lcalico_html_Modifier$__f__forUnit = new $c_Lcalico_html_Modifier$$anon$1();
+}
+$c_Lcalico_html_Modifier$.prototype = new $h_O();
+$c_Lcalico_html_Modifier$.prototype.constructor = $c_Lcalico_html_Modifier$;
+/** @constructor */
+function $h_Lcalico_html_Modifier$() {
+}
+$h_Lcalico_html_Modifier$.prototype = $c_Lcalico_html_Modifier$.prototype;
+var $d_Lcalico_html_Modifier$ = new $TypeData().initClass($c_Lcalico_html_Modifier$, "calico.html.Modifier$", ({
+  Lcalico_html_Modifier$: 1
+}));
+var $n_Lcalico_html_Modifier$;
+function $m_Lcalico_html_Modifier$() {
+  if ((!$n_Lcalico_html_Modifier$)) {
+    $n_Lcalico_html_Modifier$ = new $c_Lcalico_html_Modifier$();
+  }
+  return $n_Lcalico_html_Modifier$;
+}
 function $f_Lcalico_html_Modifiers__$init$__V($thiz) {
   $thiz.Lcalico_html_Html__f_calico$html$Modifiers$$_forString = new $c_Lcalico_html_Modifiers$$anon$11($thiz);
   $thiz.Lcalico_html_Html__f_calico$html$Modifiers$$_forStringSignal = new $c_Lcalico_html_Modifiers$$anon$12($thiz);
@@ -1746,8 +1792,23 @@ $h_Lcalico_html_Prop.prototype = $c_Lcalico_html_Prop.prototype;
 var $d_Lcalico_html_Prop = new $TypeData().initClass($c_Lcalico_html_Prop, "calico.html.Prop", ({
   Lcalico_html_Prop: 1
 }));
+/** @constructor */
+function $c_Lcalico_html_Prop$ConstantModifier(name, encode, value) {
+  this.Lcalico_html_Prop$ConstantModifier__f_name = null;
+  this.Lcalico_html_Prop$ConstantModifier__f_encode = null;
+  this.Lcalico_html_Prop$ConstantModifier__f_value = null;
+  this.Lcalico_html_Prop$ConstantModifier__f_name = name;
+  this.Lcalico_html_Prop$ConstantModifier__f_encode = encode;
+  this.Lcalico_html_Prop$ConstantModifier__f_value = value;
+}
+$c_Lcalico_html_Prop$ConstantModifier.prototype = new $h_O();
+$c_Lcalico_html_Prop$ConstantModifier.prototype.constructor = $c_Lcalico_html_Prop$ConstantModifier;
+/** @constructor */
+function $h_Lcalico_html_Prop$ConstantModifier() {
+}
+$h_Lcalico_html_Prop$ConstantModifier.prototype = $c_Lcalico_html_Prop$ConstantModifier.prototype;
 function $as_Lcalico_html_Prop$ConstantModifier(obj) {
-  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "calico.html.Prop$ConstantModifier"));
+  return (((obj instanceof $c_Lcalico_html_Prop$ConstantModifier) || (obj === null)) ? obj : $throwClassCastException(obj, "calico.html.Prop$ConstantModifier"));
 }
 function $isArrayOf_Lcalico_html_Prop$ConstantModifier(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcalico_html_Prop$ConstantModifier)));
@@ -1755,6 +1816,9 @@ function $isArrayOf_Lcalico_html_Prop$ConstantModifier(obj, depth) {
 function $asArrayOf_Lcalico_html_Prop$ConstantModifier(obj, depth) {
   return (($isArrayOf_Lcalico_html_Prop$ConstantModifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcalico.html.Prop$ConstantModifier;", depth));
 }
+var $d_Lcalico_html_Prop$ConstantModifier = new $TypeData().initClass($c_Lcalico_html_Prop$ConstantModifier, "calico.html.Prop$ConstantModifier", ({
+  Lcalico_html_Prop$ConstantModifier: 1
+}));
 /** @constructor */
 function $c_Lcalico_html_Prop$SignalModifier(name, encode, values) {
   this.Lcalico_html_Prop$SignalModifier__f_name = null;
@@ -1783,7 +1847,7 @@ var $d_Lcalico_html_Prop$SignalModifier = new $TypeData().initClass($c_Lcalico_h
   Lcalico_html_Prop$SignalModifier: 1
 }));
 function $f_Lcalico_html_PropModifiers__$init$__V($thiz) {
-  new $c_Lcalico_html_PropModifiers$$anon$2($thiz);
+  $thiz.Lcalico_html_Html__f_calico$html$PropModifiers$$_forConstantProp = new $c_Lcalico_html_PropModifiers$$anon$2($thiz);
   var signal = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$11) => {
     var _$11$1 = $as_Lcalico_html_Prop$SignalModifier(_$11);
     return $n(_$11$1).Lcalico_html_Prop$SignalModifier__f_values;
@@ -9937,6 +10001,236 @@ function $m_Lcom_comcast_ip4s_Cidr$() {
   return $n_Lcom_comcast_ip4s_Cidr$;
 }
 /** @constructor */
+function $c_Lecho$package$() {
+}
+$c_Lecho$package$.prototype = new $h_O();
+$c_Lecho$package$.prototype.constructor = $c_Lecho$package$;
+/** @constructor */
+function $h_Lecho$package$() {
+}
+$h_Lecho$package$.prototype = $c_Lecho$package$.prototype;
+$c_Lecho$package$.prototype.dequeueN__sci_Queue__I__sci_Queue = (function(q, n) {
+  var n$tailLocal1 = n;
+  var q$tailLocal1 = q;
+  while (true) {
+    if ((n$tailLocal1 > 0)) {
+      var q$tailLocal1$tmp1 = $as_sci_Queue($n($n(q$tailLocal1).dequeue__T2())._2__O());
+      var n$tailLocal1$tmp1 = ((n$tailLocal1 - 1) | 0);
+      q$tailLocal1 = q$tailLocal1$tmp1;
+      n$tailLocal1 = n$tailLocal1$tmp1;
+    } else {
+      return q$tailLocal1;
+    }
+  }
+});
+$c_Lecho$package$.prototype.echo__Lcats_effect_kernel_Resource = (function() {
+  var this$1 = $n($as_Lcats_effect_IO($m_Lfs2_concurrent_SignallingRef$().of__O__Lcats_effect_kernel_GenConcurrent__O(128, $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO)));
+  var this$71 = new $c_Lcats_effect_kernel_Resource$Eval(this$1);
+  var f$4 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((maxSize$2) => {
+    var maxSize = $as_Lfs2_concurrent_SignallingRef(maxSize$2);
+    var this$5 = $n($as_Lcats_effect_IO($m_Lfs2_concurrent_SignallingRef$().of__O__Lcats_effect_kernel_GenConcurrent__O($m_s_None$(), $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO)));
+    var this$69 = new $c_Lcats_effect_kernel_Resource$Eval(this$5);
+    var f$3 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((ref$2) => {
+      var ref = $as_Lfs2_concurrent_SignallingRef(ref$2);
+      var this$13 = $m_Lfs2_Stream$();
+      var this$9 = new $c_s_concurrent_duration_package$DurationInt(($m_s_concurrent_duration_package$(), 100));
+      var unit = $m_s_concurrent_duration_package$().s_concurrent_duration_package$__f_MILLISECONDS;
+      var this$ = this$9.s_concurrent_duration_package$DurationInt__f_n;
+      $m_s_concurrent_duration_Duration$();
+      var hi = (this$ >> 31);
+      var period = new $c_s_concurrent_duration_FiniteDuration(this$, hi, unit);
+      var t = $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO;
+      var this$67 = $n($n($n($n($n($n($n($n(this$13.fixedRate__s_concurrent_duration_FiniteDuration__Z__Lcats_effect_kernel_GenTemporal__Lfs2_Stream(period, true, t)).evalMap__F1__Lfs2_Stream(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$1$2) => {
+        $as_jl_Void(_$1$2);
+        var _1 = $n($as_Lcats_effect_IO($n(ref).get__O())).map__F1__Lcats_effect_IO(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((opt$2) => {
+          var opt = $as_s_Option(opt$2);
+          return $m_Lfs2_Chunk$().fromOption__s_Option__Lfs2_Chunk(opt);
+        })));
+        var _2 = $n(maxSize).get__O();
+        var t2 = $ct_T2__O__O__(new $c_T2(), _1, _2);
+        return $as_Lcats_effect_IO(new $c_Lcats_syntax_Tuple2SemigroupalOps(t2).mapN__F2__Lcats_Functor__Lcats_Semigroupal__O(new $c_sr_AbstractFunction2_$$Lambda$b4228bd32034ae3b2f0c5fc896319aa4b79b55f8(((_$2$3, _$3$3) => {
+          var _$2$2 = $as_Lfs2_Chunk(_$2$3);
+          var _$3$2 = $uI(_$3$3);
+          var tc = $m_Lfs2_Chunk$().Lfs2_Chunk$__f_instance;
+          var this$17 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(_$2$2, tc);
+          return $as_Lfs2_Chunk($f_Lcats_Functor__tupleLeft__O__O__O($n(this$17.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance), this$17.Lcats_Functor$ToFunctorOps$$anon$5__f_self, _$3$2));
+        })), $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO, $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO));
+      })))).unchunks__s_$less$colon$less__Lfs2_Stream($m_s_$less$colon$less$().s_$less$colon$less$__f_singleton)).map__F1__Lfs2_Stream(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((x$1$2) => {
+        var x$1 = $as_T2(x$1$2);
+        var m = $uI($n(x$1)._1__O());
+        var s = $as_T($n(x$1)._2__O());
+        var $x_2 = $n($m_Lcalico_html_io$().span__Lcalico_html_HtmlTag());
+        var Modifiers_this = $m_Lcalico_html_io$();
+        var x0 = $x_2.apply__O__Lcalico_html_Modifier__Lcats_effect_kernel_Resource(s, Modifiers_this.Lcalico_html_Html__f_calico$html$Modifiers$$_forString);
+        var x1 = $n($m_Lcalico_html_io$().br__Lcalico_html_HtmlTag()).apply__O__Lcalico_html_Modifier__Lcats_effect_kernel_Resource((void 0), $m_Lcalico_html_Modifier$().Lcalico_html_Modifier$__f__forUnit);
+        var array = [x0, x1];
+        var xs = $ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array);
+        var this$23 = $ct_sci_Queue__sci_List__sci_List__(new $c_sci_Queue(), $m_sci_Nil$(), ($m_sci_List$(), $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(xs)));
+        var b = $m_sci_Queue$().newBuilder__scm_Builder();
+        var it = this$23.iterator__sc_Iterator();
+        while ($n(it).hasNext__Z()) {
+          var this$28 = $n(b);
+          var x0$1 = $n(it).next__O();
+          var _$4 = $as_Lcats_effect_kernel_Resource(x0$1);
+          var F0 = $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO;
+          var tc$1 = new $c_Lcats_effect_kernel_ResourceHOInstances0$$anon$9(F0);
+          var this$26 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(_$4, tc$1);
+          $n(this$26.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance);
+          var fa = this$26.Lcats_Functor$ToFunctorOps$$anon$5__f_self;
+          var elem = $as_Lcats_effect_kernel_Resource(fa);
+          this$28.addOne__O__scm_Growable(elem);
+        }
+        var _2$1 = $n(b).result__O();
+        return $ct_T2__O__O__(new $c_T2(), m, _2$1);
+      })))).scan__O__F2__Lfs2_Stream($m_sci_Queue$EmptyQueue$(), new $c_sr_AbstractFunction2_$$Lambda$b4228bd32034ae3b2f0c5fc896319aa4b79b55f8(((q1$2, q2$2) => {
+        var q1 = $as_sci_Queue(q1$2);
+        var q2 = $as_T2(q2$2);
+        var max = $uI($n(q2)._1__O());
+        var this$31 = $n(q1);
+        var iter = $as_sc_Iterable($n(q2)._2__O());
+        var q = this$31.appendedAll__sc_IterableOnce__sci_Queue(iter);
+        var this$32 = $n(q);
+        if ((this$32.length__I() > max)) {
+          var $x_1 = $m_Lecho$package$();
+          var this$33 = $n(q);
+          return $x_1.dequeueN__sci_Queue__I__sci_Queue(q, ((this$33.length__I() - max) | 0));
+        } else {
+          return q;
+        }
+      })))).map__F1__Lfs2_Stream(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$5$2) => {
+        var _$5 = $as_sci_Queue(_$5$2);
+        var this$34 = $n(_$5);
+        var coll = $f_sc_IterableOnceOps__reversed__sc_Iterable(this$34);
+        var this$35 = $m_sci_Queue$();
+        return this$35.from__sc_IterableOnce__sci_Queue(coll);
+      })))).holdOptionResource__Lcats_effect_kernel_GenConcurrent__Lcats_effect_kernel_Resource($m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO)).map__F1__Lcats_effect_kernel_Resource(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$6$2) => {
+        var _$6 = $as_Lfs2_concurrent_Signal(_$6$2);
+        var this$36 = $m_Lfs2_concurrent_Signal$();
+        var evidence$1 = $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO;
+        var tc$2 = new $c_Lfs2_concurrent_SignalInstances$$anon$9(evidence$1, this$36);
+        var this$40 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(_$6, tc$2);
+        var f = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$7$2) => {
+          var _$7 = $as_s_Option(_$7$2);
+          var this$39 = $n($n(_$7).toList__sci_List());
+          var toIterableOnce = $m_s_$less$colon$less$().s_$less$colon$less$__f_singleton;
+          return $as_sci_List($f_sc_StrictOptimizedIterableOps__flatten__F1__O(this$39, toIterableOnce));
+        }));
+        return $as_Lfs2_concurrent_Signal($n(this$40.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance).map__O__F1__O(this$40.Lcats_Functor$ToFunctorOps$$anon$5__f_self, f));
+      }))));
+      var f$2 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((continousValues$2) => {
+        var continousValues = $as_Lfs2_concurrent_Signal(continousValues$2);
+        var $x_8 = $n($m_Lcalico_html_io$().div__Lcalico_html_HtmlTag());
+        var $x_4 = $n($m_Lcalico_html_io$().input__Lcalico_html_HtmlTag());
+        var $x_3 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((self$2) => {
+          var this$41 = $n($m_Lcalico_html_io$().placeholder__Lcalico_html_Prop());
+          var _1$1 = new $c_Lcalico_html_Prop$ConstantModifier(this$41.Lcalico_html_Prop__f_name, this$41.Lcalico_html_Prop__f_encode, "Echo?");
+          var this$47 = $n($m_Lcalico_html_io$().onInput__Lcalico_html_EventProp());
+          var sink = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$8$2) => {
+            var _$8 = $as_Lfs2_Stream(_$8$2);
+            return $n(_$8).foreach__F1__Lfs2_Stream(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((e$2) => {
+              $as_Lfs2_dom_Event(e$2);
+              return $n($as_Lcats_effect_IO($n($m_Lfs2_dom_Dom$package$HtmlInputElement$().value__Lorg_scalajs_dom_HTMLInputElement__Lcats_effect_kernel_Async__Lcats_effect_kernel_Ref(self$2, $m_Lcalico_html_io$().given_Dom_F__Lcats_effect_kernel_Async())).get__O())).flatMap__F1__Lcats_effect_IO(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((r$2) => {
+                var r = $as_T(r$2);
+                $m_sc_StringOps$();
+                var this$44 = $n(r);
+                var cond = (!(this$44 === ""));
+                return $as_Lcats_effect_IO($n(ref).set__O__O((cond ? new $c_s_Some(r) : $m_s_None$())));
+              })));
+            })));
+          }));
+          var _2$2 = new $c_Lcalico_html_EventProp$PipeModifier(this$47.Lcalico_html_EventProp__f_key, $n(this$47.Lcalico_html_EventProp__f_pipe).andThen__F1__F1(sink));
+          return $ct_T2__O__O__(new $c_T2(), _1$1, _2$2);
+        }));
+        var gen$proxy1 = new $c_sr_TupleMirror(2);
+        var is = new $c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => {
+          var arr$proxy1 = new $ac_O(2);
+          var PropModifiers_this = $m_Lcalico_html_io$();
+          arr$proxy1.set(0, PropModifiers_this.Lcalico_html_Html__f_calico$html$PropModifiers$$_forConstantProp);
+          var EventPropModifiers_this = $m_Lcalico_html_io$();
+          arr$proxy1.set(1, EventPropModifiers_this.Lcalico_html_Html__f_calico$html$EventPropModifiers$$_forPipeEventProp);
+          return arr$proxy1;
+        }));
+        var inst = new $c_Lshapeless3_deriving_internals_ErasedProductInstancesN(gen$proxy1, is);
+        var _1$3 = $x_4.withSelf__F1__Lcalico_html_Modifier__Lcats_effect_kernel_Resource($x_3, new $c_Lcalico_html_Modifier$$anon$5(inst));
+        var $x_6 = $n($m_Lcalico_html_io$().input__Lcalico_html_HtmlTag());
+        var $x_5 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((self$2$1) => {
+          var this$51 = $n($m_Lcalico_html_io$().tpe__Lcalico_html_HtmlAttr());
+          var _1$2 = new $c_Lcalico_html_HtmlAttr$ConstantModifier(this$51.Lcalico_html_HtmlAttr__f_key, this$51.Lcalico_html_HtmlAttr__f_encode, "number");
+          var this$52 = $n($m_Lcalico_html_io$().value__Lcalico_html_Prop());
+          var _2$3 = new $c_Lcalico_html_Prop$ConstantModifier(this$52.Lcalico_html_Prop__f_name, this$52.Lcalico_html_Prop__f_encode, "128");
+          var this$58 = $n($m_Lcalico_html_io$().onInput__Lcalico_html_EventProp());
+          var sink$1 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$9$2) => {
+            var _$9 = $as_Lfs2_Stream(_$9$2);
+            return $n(_$9).foreach__F1__Lfs2_Stream(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((e$2$1) => {
+              $as_Lfs2_dom_Event(e$2$1);
+              return $n($n($as_Lcats_effect_IO($n($m_Lfs2_dom_Dom$package$HtmlInputElement$().value__Lorg_scalajs_dom_HTMLInputElement__Lcats_effect_kernel_Async__Lcats_effect_kernel_Ref(self$2$1, $m_Lcalico_html_io$().given_Dom_F__Lcats_effect_kernel_Async())).get__O())).map__F1__Lcats_effect_IO(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$10$2) => {
+                var _$10 = $as_T(_$10$2);
+                $m_sc_StringOps$();
+                return $m_sc_StringParsers$().parseInt__T__s_Option(_$10);
+              })))).flatMap__F1__Lcats_effect_IO(new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((_$11$2) => {
+                var _$11 = $as_s_Option(_$11$2);
+                $m_Lcats_UnorderedFoldable$();
+                var tc$3 = $as_Lcats_Traverse($m_Lcats_instances_package$option$().Lcats_instances_package$option$__f_catsStdInstancesForOption);
+                var this$57 = new $c_Lcats_Foldable$ToFoldableOps$$anon$6(_$11, tc$3);
+                var f$1 = new $c_sr_AbstractFunction1_$$Lambda$7afc3dd0acc1681fb022ef921c83979087aaa919(((a$3) => {
+                  var a$2 = $uI(a$3);
+                  return $as_Lcats_effect_IO($n(maxSize).set__O__O(a$2));
+                }));
+                var G = $m_Lcats_effect_IO$().Lcats_effect_IO$__f__asyncForIO;
+                return $as_Lcats_effect_IO($n(this$57.Lcats_Foldable$ToFoldableOps$$anon$6__f_typeClassInstance).traverse___O__F1__Lcats_Applicative__O(this$57.Lcats_Foldable$ToFoldableOps$$anon$6__f_self, f$1, G));
+              })));
+            })));
+          }));
+          var _3 = new $c_Lcalico_html_EventProp$PipeModifier(this$58.Lcalico_html_EventProp__f_key, $n(this$58.Lcalico_html_EventProp__f_pipe).andThen__F1__F1(sink$1));
+          return new $c_T3(_1$2, _2$3, _3);
+        }));
+        var gen$proxy2 = new $c_sr_TupleMirror(3);
+        var is$1 = new $c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => {
+          var arr$proxy2 = new $ac_O(3);
+          var HtmlAttrModifiers_this = $m_Lcalico_html_io$();
+          arr$proxy2.set(0, HtmlAttrModifiers_this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$_forConstantHtmlAttr);
+          var PropModifiers_this$1 = $m_Lcalico_html_io$();
+          arr$proxy2.set(1, PropModifiers_this$1.Lcalico_html_Html__f_calico$html$PropModifiers$$_forConstantProp);
+          var EventPropModifiers_this$1 = $m_Lcalico_html_io$();
+          arr$proxy2.set(2, EventPropModifiers_this$1.Lcalico_html_Html__f_calico$html$EventPropModifiers$$_forPipeEventProp);
+          return arr$proxy2;
+        }));
+        var inst$1 = new $c_Lshapeless3_deriving_internals_ErasedProductInstancesN(gen$proxy2, is$1);
+        var _2$4 = $x_6.withSelf__F1__Lcalico_html_Modifier__Lcats_effect_kernel_Resource($x_5, new $c_Lcalico_html_Modifier$$anon$5(inst$1));
+        $m_Lcalico_html_io$();
+        var _3$1 = new $c_Lcalico_html_Children$ResourceListSignalModifier(continousValues);
+        var $x_7 = new $c_T3(_1$3, _2$4, _3$1);
+        var gen$proxy3 = new $c_sr_TupleMirror(3);
+        var is$2 = new $c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => {
+          var arr$proxy3 = new $ac_O(3);
+          var Modifiers_this$1 = $m_Lcalico_html_io$();
+          arr$proxy3.set(0, Modifiers_this$1.Lcalico_html_Html__f_calico$html$Modifiers$$_forNodeResource);
+          var Modifiers_this$2 = $m_Lcalico_html_io$();
+          arr$proxy3.set(1, Modifiers_this$2.Lcalico_html_Html__f_calico$html$Modifiers$$_forNodeResource);
+          var ChildrenModifiers_this = $m_Lcalico_html_io$();
+          arr$proxy3.set(2, ChildrenModifiers_this.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$_forResourceListSignalChildren);
+          return arr$proxy3;
+        }));
+        var inst$2 = new $c_Lshapeless3_deriving_internals_ErasedProductInstancesN(gen$proxy3, is$2);
+        return $x_8.apply__O__Lcalico_html_Modifier__Lcats_effect_kernel_Resource($x_7, new $c_Lcalico_html_Modifier$$anon$5(inst$2));
+      }));
+      return new $c_Lcats_effect_kernel_Resource$Bind(this$67, f$2);
+    }));
+    return new $c_Lcats_effect_kernel_Resource$Bind(this$69, f$3);
+  }));
+  return new $c_Lcats_effect_kernel_Resource$Bind(this$71, f$4);
+});
+var $d_Lecho$package$ = new $TypeData().initClass($c_Lecho$package$, "echo$package$", ({
+  Lecho$package$: 1
+}));
+var $n_Lecho$package$;
+function $m_Lecho$package$() {
+  if ((!$n_Lecho$package$)) {
+    $n_Lecho$package$ = new $c_Lecho$package$();
+  }
+  return $n_Lecho$package$;
+}
+/** @constructor */
 function $c_Lexponentials$package$() {
 }
 $c_Lexponentials$package$.prototype = new $h_O();
@@ -10228,6 +10522,41 @@ function $m_Lfibonacci$package$() {
     $n_Lfibonacci$package$ = new $c_Lfibonacci$package$();
   }
   return $n_Lfibonacci$package$;
+}
+/** @constructor */
+function $c_Lfs2_Chunk$Queue$() {
+  this.Lfs2_Chunk$Queue$__f_empty_ = null;
+  $n_Lfs2_Chunk$Queue$ = this;
+  this.Lfs2_Chunk$Queue$__f_empty_ = new $c_Lfs2_Chunk$Queue($m_sci_Queue$EmptyQueue$(), 0);
+}
+$c_Lfs2_Chunk$Queue$.prototype = new $h_O();
+$c_Lfs2_Chunk$Queue$.prototype.constructor = $c_Lfs2_Chunk$Queue$;
+/** @constructor */
+function $h_Lfs2_Chunk$Queue$() {
+}
+$h_Lfs2_Chunk$Queue$.prototype = $c_Lfs2_Chunk$Queue$.prototype;
+$c_Lfs2_Chunk$Queue$.prototype.build__Lfs2_Chunk__Lfs2_Chunk$Queue = (function(chunks) {
+  var sqb = $m_sci_Queue$().newBuilder__scm_Builder();
+  var totalSize = new $c_sr_IntRef(0);
+  $n(chunks).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((ch) => {
+    var ch$1 = $as_Lfs2_Chunk(ch);
+    if ((!$n(ch$1).isEmpty__Z())) {
+      var this$2 = $n(sqb);
+      this$2.addOne__O__scm_Growable(ch$1);
+      totalSize.sr_IntRef__f_elem = ((totalSize.sr_IntRef__f_elem + $n(ch$1).size__I()) | 0);
+    }
+  })));
+  return new $c_Lfs2_Chunk$Queue($as_sci_Queue($n(sqb).result__O()), totalSize.sr_IntRef__f_elem);
+});
+var $d_Lfs2_Chunk$Queue$ = new $TypeData().initClass($c_Lfs2_Chunk$Queue$, "fs2.Chunk$Queue$", ({
+  Lfs2_Chunk$Queue$: 1
+}));
+var $n_Lfs2_Chunk$Queue$;
+function $m_Lfs2_Chunk$Queue$() {
+  if ((!$n_Lfs2_Chunk$Queue$)) {
+    $n_Lfs2_Chunk$Queue$ = new $c_Lfs2_Chunk$Queue$();
+  }
+  return $n_Lfs2_Chunk$Queue$;
 }
 function $f_Lfs2_ChunkCompanion213And3Compat__platformFrom__sc_Iterable__s_Option($thiz, i) {
   if ((i instanceof $c_sci_ArraySeq)) {
@@ -11219,6 +11548,13 @@ $c_Lfs2_Stream.prototype.translate__Lcats_arrow_FunctionK__Lfs2_Stream = (functi
   var self = $m_Lfs2_Pull$().translate__Lfs2_Pull__Lcats_arrow_FunctionK__Lfs2_Pull(this.Lfs2_Stream__f_underlying, u);
   return new $c_Lfs2_Stream(self);
 });
+$c_Lfs2_Stream.prototype.unchunks__s_$less$colon$less__Lfs2_Stream = (function(ev) {
+  $m_Lfs2_Pull$();
+  $m_Lfs2_Pull$();
+  var self = this.Lfs2_Stream__f_underlying;
+  var self$1 = $m_Lfs2_Pull$StreamPullOps$().flatMapOutput$extension__Lfs2_Pull__F1__Lfs2_Pull(self, new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$70) => $m_Lfs2_Pull$().output__Lfs2_Chunk__Lfs2_Pull($as_Lfs2_Chunk(($n(ev), _$70))))));
+  return new $c_Lfs2_Stream(self$1);
+});
 $c_Lfs2_Stream.prototype.zip__Lfs2_Stream__Lfs2_Stream = (function(that) {
   return this.zipWith__Lfs2_Stream__F2__Lfs2_Stream(that, new $c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((_1, _2) => $ct_T2__O__O__(new $c_T2(), _1, _2))));
 });
@@ -12146,6 +12482,15 @@ $c_Lfs2_dom_Event.prototype.constructor = $c_Lfs2_dom_Event;
 function $h_Lfs2_dom_Event() {
 }
 $h_Lfs2_dom_Event.prototype = $c_Lfs2_dom_Event.prototype;
+function $as_Lfs2_dom_Event(obj) {
+  return (((obj instanceof $c_Lfs2_dom_Event) || (obj === null)) ? obj : $throwClassCastException(obj, "fs2.dom.Event"));
+}
+function $isArrayOf_Lfs2_dom_Event(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lfs2_dom_Event)));
+}
+function $asArrayOf_Lfs2_dom_Event(obj, depth) {
+  return (($isArrayOf_Lfs2_dom_Event(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lfs2.dom.Event;", depth));
+}
 /** @constructor */
 function $c_Lfs2_dom_EventTargetHelpers$() {
 }
@@ -31035,6 +31380,40 @@ function $m_sc_StringOps$() {
   }
   return $n_sc_StringOps$;
 }
+function $p_sc_StringParsers$__step$1__I__T__I__I__Z__s_Option($thiz, len$2, from$2, i, agg, isPositive) {
+  var agg$tailLocal2 = agg;
+  var i$tailLocal2 = i;
+  while (true) {
+    if ((i$tailLocal2 === len$2)) {
+      if ((!isPositive)) {
+        var value = agg$tailLocal2;
+        return new $c_s_Some(value);
+      } else if ((agg$tailLocal2 === (-2147483648))) {
+        return $m_s_None$();
+      } else {
+        var value$1 = ((-agg$tailLocal2) | 0);
+        return new $c_s_Some(value$1);
+      }
+    } else if ((agg$tailLocal2 < (-214748364))) {
+      return $m_s_None$();
+    } else {
+      var this$3 = $n(from$2);
+      var index = i$tailLocal2;
+      var ch = $charAt(this$3, index);
+      var this$4 = $m_jl_Character$();
+      var codePoint = ch;
+      var digit = this$4.digitWithValidRadix__I__I__I(codePoint, 10);
+      if (((digit === (-1)) || ((((-214748364) ^ agg$tailLocal2) | (9 ^ digit)) === 0))) {
+        return $m_s_None$();
+      } else {
+        var i$tailLocal2$tmp1 = ((1 + i$tailLocal2) | 0);
+        var agg$tailLocal2$tmp1 = ((Math.imul(10, agg$tailLocal2) - digit) | 0);
+        i$tailLocal2 = i$tailLocal2$tmp1;
+        agg$tailLocal2 = agg$tailLocal2$tmp1;
+      }
+    }
+  }
+}
 function $p_sc_StringParsers$__step$2__I__T__I__J__Z__s_Option($thiz, len$3, from$3, i, agg_$_lo, agg_$_hi, isPositive) {
   var agg$tailLocal3_$_lo = agg_$_lo;
   var agg$tailLocal3_$_hi = agg_$_hi;
@@ -31117,6 +31496,20 @@ $c_sc_StringParsers$.prototype.constructor = $c_sc_StringParsers$;
 function $h_sc_StringParsers$() {
 }
 $h_sc_StringParsers$.prototype = $c_sc_StringParsers$.prototype;
+$c_sc_StringParsers$.prototype.parseInt__T__s_Option = (function(from) {
+  var this$1 = $n(from);
+  var len = this$1.length;
+  if ((len === 0)) {
+    return $m_s_None$();
+  } else {
+    var this$2 = $n(from);
+    var first = $charAt(this$2, 0);
+    var this$3 = $m_jl_Character$();
+    var codePoint = first;
+    var v = this$3.digitWithValidRadix__I__I__I(codePoint, 10);
+    return ((len === 1) ? ((v > (-1)) ? new $c_s_Some(v) : $m_s_None$()) : ((v > (-1)) ? $p_sc_StringParsers$__step$1__I__T__I__I__Z__s_Option(this, len, from, 1, ((-v) | 0), true) : ((first === 43) ? $p_sc_StringParsers$__step$1__I__T__I__I__Z__s_Option(this, len, from, 1, 0, true) : ((first === 45) ? $p_sc_StringParsers$__step$1__I__T__I__I__Z__s_Option(this, len, from, 1, 0, false) : $m_s_None$()))));
+  }
+});
 $c_sc_StringParsers$.prototype.parseLong__T__s_Option = (function(from) {
   var this$1 = $n(from);
   var len = this$1.length;
@@ -38591,13 +38984,15 @@ $c_LWorkshopApp$.prototype.widgets__Lcats_data_NonEmptyList = (function() {
   var x0 = new $c_LWorkshopApp$Widget("How fast can you overflow the Fibonacci number?", "thomas", content$1);
   var content$2 = $m_Ltraffic$package$().traffic__Lcats_effect_kernel_Resource();
   var x1 = new $c_LWorkshopApp$Widget("Cph traffic light", "traffic", content$2);
-  var content$3 = $m_Lexponentials$package$().exponentials__Lcats_effect_kernel_Resource();
-  var x2 = new $c_LWorkshopApp$Widget("Exponentials", "exponentials", content$3);
-  var content$4 = $m_Lfibonacci$package$().fibonacci__Lcats_effect_kernel_Resource();
-  var x3 = new $c_LWorkshopApp$Widget("Fibonacci", "fibonacci", content$4);
-  var content$5 = $m_LlagTest$package$().lagTest__Lcats_effect_kernel_Resource();
-  var x4 = new $c_LWorkshopApp$Widget("Lag Test", "lag-test", content$5);
-  var array = [x0, x1, x2, x3, x4];
+  var content$3 = $m_Lecho$package$().echo__Lcats_effect_kernel_Resource();
+  var x2 = new $c_LWorkshopApp$Widget("Echo", "echo", content$3);
+  var content$4 = $m_Lexponentials$package$().exponentials__Lcats_effect_kernel_Resource();
+  var x3 = new $c_LWorkshopApp$Widget("Exponentials", "exponentials", content$4);
+  var content$5 = $m_Lfibonacci$package$().fibonacci__Lcats_effect_kernel_Resource();
+  var x4 = new $c_LWorkshopApp$Widget("Fibonacci", "fibonacci", content$5);
+  var content$6 = $m_LlagTest$package$().lagTest__Lcats_effect_kernel_Resource();
+  var x5 = new $c_LWorkshopApp$Widget("Lag Test", "lag-test", content$6);
+  var array = [x0, x1, x2, x3, x4, x5];
   var tail = $ct_sjsr_WrappedVarArgs__sjs_js_Array__(new $c_sjsr_WrappedVarArgs(), array);
   $m_Lcats_data_NonEmptyList$();
   $m_sci_List$();
@@ -38656,7 +39051,7 @@ function $h_Lcalico_html_ChildrenModifiers$$anon$2() {
 $h_Lcalico_html_ChildrenModifiers$$anon$2.prototype = $c_Lcalico_html_ChildrenModifiers$$anon$2.prototype;
 $c_Lcalico_html_ChildrenModifiers$$anon$2.prototype.modify__Lcalico_html_Children$ResourceListSignalModifier__Lorg_scalajs_dom_Node__Lcats_effect_kernel_Resource = (function(m, n) {
   var this$1 = $n(this.Lcalico_html_ChildrenModifiers$$anon$2__f_$outer);
-  var target = $n(m).children__Lfs2_concurrent_Signal();
+  var target = $n(m).Lcalico_html_Children$ResourceListSignalModifier__f_children;
   var this$2 = $m_Lfs2_concurrent_Signal$();
   var evidence$1 = this$1.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$F;
   var tc = new $c_Lfs2_concurrent_SignalInstances$$anon$9(evidence$1, this$2);
@@ -38848,6 +39243,23 @@ $c_Lcalico_html_HtmlAttrModifiers$$anon$2.prototype.modify__O__O__Lcats_effect_k
 });
 var $d_Lcalico_html_HtmlAttrModifiers$$anon$2 = new $TypeData().initClass($c_Lcalico_html_HtmlAttrModifiers$$anon$2, "calico.html.HtmlAttrModifiers$$anon$2", ({
   Lcalico_html_HtmlAttrModifiers$$anon$2: 1,
+  Lcalico_html_Modifier: 1
+}));
+/** @constructor */
+function $c_Lcalico_html_Modifier$$anon$1() {
+}
+$c_Lcalico_html_Modifier$$anon$1.prototype = new $h_O();
+$c_Lcalico_html_Modifier$$anon$1.prototype.constructor = $c_Lcalico_html_Modifier$$anon$1;
+/** @constructor */
+function $h_Lcalico_html_Modifier$$anon$1() {
+}
+$h_Lcalico_html_Modifier$$anon$1.prototype = $c_Lcalico_html_Modifier$$anon$1.prototype;
+$c_Lcalico_html_Modifier$$anon$1.prototype.modify__O__O__Lcats_effect_kernel_Resource = (function(a, e) {
+  $as_jl_Void(a);
+  return new $c_Lcats_effect_kernel_Resource$Pure((void 0));
+});
+var $d_Lcalico_html_Modifier$$anon$1 = new $TypeData().initClass($c_Lcalico_html_Modifier$$anon$1, "calico.html.Modifier$$anon$1", ({
+  Lcalico_html_Modifier$$anon$1: 1,
   Lcalico_html_Modifier: 1
 }));
 /** @constructor */
@@ -39284,10 +39696,10 @@ function $h_Lcalico_html_PropModifiers$$anon$2() {
 $h_Lcalico_html_PropModifiers$$anon$2.prototype = $c_Lcalico_html_PropModifiers$$anon$2.prototype;
 $c_Lcalico_html_PropModifiers$$anon$2.prototype.modify__Lcalico_html_Prop$ConstantModifier__O__Lcats_effect_kernel_Resource = (function(m, n) {
   var this$1 = $n(this.Lcalico_html_PropModifiers$$anon$2__f_$outer);
-  var value = $n(m).value__O();
+  var value = $n(m).Lcalico_html_Prop$ConstantModifier__f_value;
   var fa = $n(this$1.Lcalico_html_Html__f_calico$html$PropModifiers$$F).delay__F0__O(new $c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => {
-    var key = $n(m).name__T();
-    var value$1 = $n($n(m).encode__F1()).apply__O__O(value);
+    var key = $n(m).Lcalico_html_Prop$ConstantModifier__f_name;
+    var value$1 = $n($n(m).Lcalico_html_Prop$ConstantModifier__f_encode).apply__O__O(value);
     n[key] = value$1;
   })));
   return new $c_Lcats_effect_kernel_Resource$Eval(fa);
@@ -69673,6 +70085,9 @@ var $d_Lcats_Eval$$anon$5 = new $TypeData().initClass($c_Lcats_Eval$$anon$5, "ca
   Lcats_Eval: 1,
   Ljava_io_Serializable: 1
 }));
+function $f_Lcats_Foldable__foldMap__O__F1__Lcats_kernel_Monoid__O($thiz, fa, f, B) {
+  return $thiz.foldLeft__O__O__F2__O(fa, $n(B).empty__O(), new $c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((b, a) => $n(B).combine__O__O__O(b, $n(f).apply__O__O(a)))));
+}
 function $f_Lcats_Foldable__foldM__O__O__F2__Lcats_Monad__O($thiz, fa, z, f, G) {
   var src = $m_Lcats_Foldable$Source$().fromFoldable__O__Lcats_Foldable__Lcats_Foldable$Source(fa, $thiz);
   return $n(G).tailRecM__O__F1__O($ct_T2__O__O__(new $c_T2(), z, src), new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$1) => {
@@ -90559,6 +90974,62 @@ function $isArrayOf_Lcom_comcast_ip4s_IDN(obj, depth) {
 function $asArrayOf_Lcom_comcast_ip4s_IDN(obj, depth) {
   return (($isArrayOf_Lcom_comcast_ip4s_IDN(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.comcast.ip4s.IDN;", depth));
 }
+function $p_Lfs2_Chunk__loop$1__I__F1__Lcats_Applicative__I__I__Lcats_Eval($thiz, width$1, f$7, F$1, start, end) {
+  if ((((end - start) | 0) <= width$1)) {
+    var target = $n(f$7).apply__O__O($thiz.apply__I__O(((end - 1) | 0)));
+    var this$3 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(target, F$1);
+    var f = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$3) => {
+      var this$2 = $m_sci_Nil$();
+      return new $c_sci_$colon$colon(_$3, this$2);
+    }));
+    var flist = $n(this$3.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance).map__O__F1__O(this$3.Lcats_Functor$ToFunctorOps$$anon$5__f_self, f);
+    var idx = ((end - 2) | 0);
+    while ((start <= idx)) {
+      flist = $n(F$1).map2__O__O__F2__O($n(f$7).apply__O__O($thiz.apply__I__O(idx)), flist, new $c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((_$4, _$5) => {
+        var _$5$1 = $as_sci_List(_$5);
+        var this$4 = $n(_$5$1);
+        return new $c_sci_$colon$colon(_$4, this$4);
+      })));
+      idx = ((idx - 1) | 0);
+    }
+    $m_Lcats_Eval$();
+    var target$1 = flist;
+    var this$7 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(target$1, F$1);
+    var f$1 = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$6) => {
+      var _$6$1 = $as_sci_List(_$6);
+      var this$6 = $m_Lcats_data_Chain$();
+      return $f_Lcats_data_ChainCompanionCompat__fromSeq__sci_Seq__Lcats_data_Chain(this$6, _$6$1);
+    }));
+    var a = $n(this$7.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance).map__O__F1__O(this$7.Lcats_Functor$ToFunctorOps$$anon$5__f_self, f$1);
+    return new $c_Lcats_Now(a);
+  } else {
+    var step = ((((end - start) | 0) / $checkIntDivisor(width$1)) | 0);
+    var this$11 = $m_Lcats_Eval$();
+    var a$1 = new $c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $p_Lfs2_Chunk__loop$1__I__F1__Lcats_Applicative__I__I__Lcats_Eval($thiz, width$1, f$7, F$1, start, ((start + step) | 0))));
+    var fchain = new $c_Lcats_Eval$$anon$5(a$1, this$11);
+    var start0 = ((start + step) | 0);
+    var end0 = ((start0 + step) | 0);
+    while ((start0 < end)) {
+      var y = end0;
+      var end1 = ((end < y) ? end : y);
+      var start1 = start0;
+      fchain = $n(fchain).flatMap__F1__Lcats_Eval(new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((F$1, start1, end1, width$1, f$7) => ((_$7) => {
+        var $x_1 = $n(F$1);
+        var this$14 = $m_Lcats_Eval$();
+        var a$2 = new $c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $p_Lfs2_Chunk__loop$1__I__F1__Lcats_Applicative__I__I__Lcats_Eval($thiz, width$1, f$7, F$1, start1, end1)));
+        return $x_1.map2Eval__O__Lcats_Eval__F2__Lcats_Eval(_$7, new $c_Lcats_Eval$$anon$5(a$2, this$14), new $c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((_$8, _$9) => {
+          var _$8$1 = $as_Lcats_data_Chain(_$8);
+          var _$9$1 = $as_Lcats_data_Chain(_$9);
+          var this$15 = $n(_$8$1);
+          return $m_Lcats_data_Chain$().concat__Lcats_data_Chain__Lcats_data_Chain__Lcats_data_Chain(this$15, _$9$1);
+        })));
+      }))(F$1, start1, end1, width$1, f$7)));
+      start0 = ((start0 + step) | 0);
+      end0 = ((end0 + step) | 0);
+    }
+    return fchain;
+  }
+}
 /** @constructor */
 function $c_Lfs2_Chunk() {
 }
@@ -90600,6 +91071,27 @@ $c_Lfs2_Chunk.prototype.collect__s_PartialFunction__Lfs2_Chunk = (function(pf) {
 });
 $c_Lfs2_Chunk.prototype.drop__I__Lfs2_Chunk = (function(n) {
   return $as_Lfs2_Chunk($n(this.splitAt__I__T2(n))._2__O());
+});
+$c_Lfs2_Chunk.prototype.flatMap__F1__Lfs2_Chunk = (function(f) {
+  if (this.isEmpty__Z()) {
+    return $m_Lfs2_Chunk$().Lfs2_Chunk$__f_empty_;
+  } else if ((this.size__I() === 1)) {
+    return $as_Lfs2_Chunk($n(f).apply__O__O(this.apply__I__O(0)));
+  } else {
+    var elem = $m_Lfs2_Chunk$Queue$().Lfs2_Chunk$Queue$__f_empty_;
+    var acc = new $c_sr_ObjectRef(elem);
+    this.foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((o) => {
+      acc.sr_ObjectRef__f_elem = $n($as_Lfs2_Chunk$Queue(acc.sr_ObjectRef__f_elem)).$colon$plus__Lfs2_Chunk__Lfs2_Chunk$Queue($as_Lfs2_Chunk($n(f).apply__O__O(o)));
+    })));
+    return $as_Lfs2_Chunk$Queue(acc.sr_ObjectRef__f_elem);
+  }
+});
+$c_Lfs2_Chunk.prototype.foldLeft__O__F2__O = (function(init, f) {
+  var res = new $c_sr_ObjectRef(init);
+  this.foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((o) => {
+    res.sr_ObjectRef__f_elem = $n(f).apply__O__O__O(res.sr_ObjectRef__f_elem, o);
+  })));
+  return res.sr_ObjectRef__f_elem;
 });
 $c_Lfs2_Chunk.prototype.foreach__F1__V = (function(f) {
   var i = 0;
@@ -90719,6 +91211,47 @@ $c_Lfs2_Chunk.prototype.splitAt__I__T2 = (function(n) {
     return this.splitAtChunk___I__T2(n);
   }
 });
+$c_Lfs2_Chunk.prototype.toIndexedChunk__Lfs2_Chunk = (function() {
+  if ((this instanceof $c_Lfs2_Chunk$Queue)) {
+    var b = new $c_scm_ArrayBuilder$generic($d_O.getClassOf());
+    b.sizeHint__I__V(this.size__I());
+    this.foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((o) => {
+      b.addOne__O__scm_ArrayBuilder$generic(o);
+    })));
+    var this$4 = $m_Lfs2_Chunk$();
+    var values = b.result__O();
+    var evidence$1 = $m_s_reflect_ManifestFactory$AnyManifest$();
+    var length = $m_jl_reflect_Array$().getLength__O__I(values);
+    if ((length === 0)) {
+      return this$4.Lfs2_Chunk$__f_empty_;
+    } else if ((length === 1)) {
+      var o$1 = $m_sr_ScalaRunTime$().array_apply__O__I__O(values, 0);
+      return new $c_Lfs2_Chunk$Singleton(o$1);
+    } else {
+      return new $c_Lfs2_Chunk$ArraySlice(values, 0, length, evidence$1);
+    }
+  } else {
+    return this;
+  }
+});
+$c_Lfs2_Chunk.prototype.traverse__F1__Lcats_Applicative__O = (function(f, F) {
+  if (this.isEmpty__Z()) {
+    return $n(F).pure__O__O($m_Lfs2_Chunk$().Lfs2_Chunk$__f_empty_);
+  } else if ((this.size__I() === 1)) {
+    var target = $n(f).apply__O__O(this.apply__I__O(0));
+    var this$3 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(target, F);
+    var f$1 = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((o) => {
+      $m_Lfs2_Chunk$();
+      return new $c_Lfs2_Chunk$Singleton(o);
+    }));
+    return $n(this$3.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance).map__O__F1__O(this$3.Lcats_Functor$ToFunctorOps$$anon$5__f_self, f$1);
+  } else {
+    return $n(F).map__O__F1__O($n($p_Lfs2_Chunk__loop$1__I__F1__Lcats_Applicative__I__I__Lcats_Eval(this, 128, f, F, 0, this.size__I())).value__O(), new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((c) => {
+      var c$1 = $as_Lcats_data_Chain(c);
+      return $m_Lfs2_Chunk$().chain__Lcats_data_Chain__Lfs2_Chunk(c$1);
+    })));
+  }
+});
 $c_Lfs2_Chunk.prototype.zipWith__Lfs2_Chunk__F2__Lfs2_Chunk = (function(that, f) {
   var a = this.size__I();
   var evidence$1 = $as_Lcats_kernel_Order($as_Lcats_kernel_Hash($m_Lcats_kernel_instances_int_package$().Lcats_kernel_instances_int_package$__f_catsKernelStdOrderForInt));
@@ -90784,15 +91317,37 @@ function $isArrayOf_Lfs2_Chunk(obj, depth) {
 function $asArrayOf_Lfs2_Chunk(obj, depth) {
   return (($isArrayOf_Lfs2_Chunk(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lfs2.Chunk;", depth));
 }
+var $d_Lfs2_Chunk = new $TypeData().initClass(0, "fs2.Chunk", ({
+  Lfs2_Chunk: 1,
+  Ljava_io_Serializable: 1,
+  Lfs2_Chunk213And3Compat: 1,
+  Lfs2_ChunkPlatform: 1,
+  Lfs2_ChunkRuntimePlatform: 1
+}));
+function $s_Lfs2_Chunk$__fs2$Chunk$$anon$3$$_$go$1__Lfs2_Chunk__F2__Lcats_Eval__I__Lcats_Eval(fa$1, f$16, b$4, i) {
+  if ((i < $n(fa$1).size__I())) {
+    var $x_1 = $n(fa$1).apply__I__O(i);
+    var this$1 = $m_Lcats_Eval$();
+    var a = new $c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $s_Lfs2_Chunk$__fs2$Chunk$$anon$3$$_$go$1__Lfs2_Chunk__F2__Lcats_Eval__I__Lcats_Eval(fa$1, f$16, b$4, ((1 + i) | 0))));
+    return $as_Lcats_Eval($n(f$16).apply__O__O__O($x_1, new $c_Lcats_Eval$$anon$5(a, this$1)));
+  } else {
+    return b$4;
+  }
+}
+function $s_Lfs2_Chunk$__fs2$Chunk$$anon$3$$_$go$2__Lfs2_Chunk__Lcats_StackSafeMonad__F1__I__O(fa$3, sF$1, f$18, ix) {
+  return ((ix < $n(fa$3).size__I()) ? $n(sF$1).flatMap__O__F1__O($n(f$18).apply__O__O($n(fa$3).apply__I__O(ix)), new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$28) => $s_Lfs2_Chunk$__fs2$Chunk$$anon$3$$_$go$2__Lfs2_Chunk__Lcats_StackSafeMonad__F1__I__O(fa$3, sF$1, f$18, ((1 + ix) | 0))))) : $n(sF$1).unit__O());
+}
 /** @constructor */
 function $c_Lfs2_Chunk$() {
   this.Lfs2_Chunk$__f_fs2$Chunk$$$NotApplied = null;
   this.Lfs2_Chunk$__f_empty_ = null;
   this.Lfs2_Chunk$__f_unit = null;
+  this.Lfs2_Chunk$__f_instance = null;
   $n_Lfs2_Chunk$ = this;
   this.Lfs2_Chunk$__f_fs2$Chunk$$$NotApplied = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$15) => $m_Lfs2_Chunk$().Lfs2_Chunk$__f_fs2$Chunk$$$NotApplied));
   this.Lfs2_Chunk$__f_empty_ = new $c_Lfs2_Chunk$EmptyChunk();
   this.Lfs2_Chunk$__f_unit = new $c_Lfs2_Chunk$Singleton((void 0));
+  this.Lfs2_Chunk$__f_instance = new $c_Lfs2_Chunk$$anon$3();
 }
 $c_Lfs2_Chunk$.prototype = new $h_O();
 $c_Lfs2_Chunk$.prototype.constructor = $c_Lfs2_Chunk$;
@@ -90800,6 +91355,18 @@ $c_Lfs2_Chunk$.prototype.constructor = $c_Lfs2_Chunk$;
 function $h_Lfs2_Chunk$() {
 }
 $h_Lfs2_Chunk$.prototype = $c_Lfs2_Chunk$.prototype;
+$c_Lfs2_Chunk$.prototype.fromOption__s_Option__Lfs2_Chunk = (function(opt) {
+  var this$1 = $n(opt);
+  if (this$1.isEmpty__Z()) {
+    var this$4 = $m_s_None$();
+  } else {
+    var x0 = this$1.get__O();
+    $m_Lfs2_Chunk$();
+    var value = new $c_Lfs2_Chunk$Singleton(x0);
+    var this$4 = new $c_s_Some(value);
+  }
+  return $as_Lfs2_Chunk((this$4.isEmpty__Z() ? $m_Lfs2_Chunk$().Lfs2_Chunk$__f_empty_ : this$4.get__O()));
+});
 $c_Lfs2_Chunk$.prototype.from__sc_Iterable__Lfs2_Chunk = (function(i) {
   var this$1 = $n($f_Lfs2_ChunkCompanion213And3Compat__platformFrom__sc_Iterable__s_Option(this, i));
   if (this$1.isEmpty__Z()) {
@@ -90906,6 +91473,9 @@ $c_Lfs2_Chunk$.prototype.iterator__sc_Iterator__Lfs2_Chunk = (function(itr) {
       return new $c_Lfs2_Chunk$Singleton(head);
     }
   }
+});
+$c_Lfs2_Chunk$.prototype.chain__Lcats_data_Chain__Lfs2_Chunk = (function(c) {
+  return ($n(c).isEmpty__Z() ? this.Lfs2_Chunk$__f_empty_ : this.iterator__sc_Iterator__Lfs2_Chunk($n(c).iterator__sc_Iterator()));
 });
 $c_Lfs2_Chunk$.prototype.array__O__s_reflect_ClassTag__Lfs2_Chunk = (function(values, evidence$1) {
   return this.array__O__I__I__s_reflect_ClassTag__Lfs2_Chunk(values, 0, $m_jl_reflect_Array$().getLength__O__I(values), evidence$1);
@@ -107072,6 +107642,238 @@ $c_Lfs2_Chunk$IndexedSeqChunk.prototype.map__F1__Lfs2_Chunk = (function(f) {
 });
 var $d_Lfs2_Chunk$IndexedSeqChunk = new $TypeData().initClass($c_Lfs2_Chunk$IndexedSeqChunk, "fs2.Chunk$IndexedSeqChunk", ({
   Lfs2_Chunk$IndexedSeqChunk: 1,
+  Lfs2_Chunk: 1,
+  Ljava_io_Serializable: 1,
+  Lfs2_Chunk213And3Compat: 1,
+  Lfs2_ChunkPlatform: 1,
+  Lfs2_ChunkRuntimePlatform: 1
+}));
+function $p_Lfs2_Chunk$Queue__accumulatedLengths__T2($thiz) {
+  if ((!$thiz.Lfs2_Chunk$Queue__f_accumulatedLengthsbitmap$1)) {
+    var this$1 = $n($thiz.Lfs2_Chunk$Queue__f_chunks);
+    var dimensions = new $ac_I(new Int32Array([this$1.length__I()]));
+    var lens = $asArrayOf_I($m_jl_reflect_Array$().newInstance__jl_Class__AI__O($d_I.getClassOf(), dimensions), 1);
+    var this$3 = $n($thiz.Lfs2_Chunk$Queue__f_chunks);
+    var dimensions$1 = new $ac_I(new Int32Array([this$3.length__I()]));
+    var arr = $asArrayOf_Lfs2_Chunk($m_jl_reflect_Array$().newInstance__jl_Class__AI__O($d_Lfs2_Chunk.getClassOf(), dimensions$1), 1);
+    var elem = 0;
+    elem = 0;
+    var elem$1 = 0;
+    elem$1 = 0;
+    var this$7 = $n($thiz.Lfs2_Chunk$Queue__f_chunks);
+    var these = this$7;
+    while ((!$n(these).isEmpty__Z())) {
+      var x0 = $n(these).head__O();
+      var c = $as_Lfs2_Chunk(x0);
+      elem = ((elem + $n(c).size__I()) | 0);
+      $n(lens).set(elem$1, elem);
+      $n(arr).set(elem$1, c);
+      elem$1 = ((1 + elem$1) | 0);
+      these = $as_sc_LinearSeq($n(these).tail__O());
+    }
+    $thiz.Lfs2_Chunk$Queue__f_accumulatedLengths$lzy1 = $ct_T2__O__O__(new $c_T2(), lens, arr);
+    $thiz.Lfs2_Chunk$Queue__f_accumulatedLengthsbitmap$1 = true;
+  }
+  return $thiz.Lfs2_Chunk$Queue__f_accumulatedLengths$lzy1;
+}
+function $p_Lfs2_Chunk$Queue__go$7__I__sci_Queue__I__Lfs2_Chunk$Queue($thiz, n$2, rem, toDrop) {
+  var toDrop$tailLocal1 = toDrop;
+  var rem$tailLocal2 = rem;
+  while (true) {
+    if ((toDrop$tailLocal1 <= 0)) {
+      return new $c_Lfs2_Chunk$Queue(rem$tailLocal2, (($thiz.Lfs2_Chunk$Queue__f_size - n$2) | 0));
+    } else {
+      var next = $as_Lfs2_Chunk($n(rem$tailLocal2).head__O());
+      var nextSize = $n(next).size__I();
+      if ((nextSize <= toDrop$tailLocal1)) {
+        var rem$tailLocal2$tmp1 = $n(rem$tailLocal2).tail__sci_Queue();
+        var toDrop$tailLocal1$tmp1 = ((toDrop$tailLocal1 - nextSize) | 0);
+        rem$tailLocal2 = rem$tailLocal2$tmp1;
+        toDrop$tailLocal1 = toDrop$tailLocal1$tmp1;
+      } else {
+        var elem$2 = $n(next).drop__I__Lfs2_Chunk(toDrop$tailLocal1);
+        var this$1 = $n($n(rem$tailLocal2).tail__sci_Queue());
+        return new $c_Lfs2_Chunk$Queue(this$1.prepended__O__sci_Queue(elem$2), (($thiz.Lfs2_Chunk$Queue__f_size - n$2) | 0));
+      }
+    }
+  }
+}
+function $p_Lfs2_Chunk$Queue__go$8__I__sci_Queue__sci_Queue__I__T2($thiz, n$3, taken, rem, toDrop) {
+  var toDrop$tailLocal2 = toDrop;
+  var rem$tailLocal3 = rem;
+  var taken$tailLocal1 = taken;
+  while (true) {
+    if ((toDrop$tailLocal2 <= 0)) {
+      var _1 = new $c_Lfs2_Chunk$Queue(taken$tailLocal1, n$3);
+      var _2 = new $c_Lfs2_Chunk$Queue(rem$tailLocal3, (($thiz.Lfs2_Chunk$Queue__f_size - n$3) | 0));
+      return $ct_T2__O__O__(new $c_T2(), _1, _2);
+    } else {
+      var next = $as_Lfs2_Chunk($n(rem$tailLocal3).head__O());
+      var nextSize = $n(next).size__I();
+      if ((nextSize <= toDrop$tailLocal2)) {
+        var this$2 = $n(taken$tailLocal1);
+        var taken$tailLocal1$tmp1 = this$2.enqueue__O__sci_Queue(next);
+        var rem$tailLocal3$tmp1 = $n(rem$tailLocal3).tail__sci_Queue();
+        var toDrop$tailLocal2$tmp1 = ((toDrop$tailLocal2 - nextSize) | 0);
+        taken$tailLocal1 = taken$tailLocal1$tmp1;
+        rem$tailLocal3 = rem$tailLocal3$tmp1;
+        toDrop$tailLocal2 = toDrop$tailLocal2$tmp1;
+      } else {
+        matchResult31: {
+          var \u03b49$___1;
+          var \u03b49$___2;
+          var x65 = $n(next).splitAtChunk___I__T2(toDrop$tailLocal2);
+          if ((x65 !== null)) {
+            var pfx = $as_Lfs2_Chunk($n(x65)._1__O());
+            var sfx = $as_Lfs2_Chunk($n(x65)._2__O());
+            var \u03b49$___1 = pfx;
+            var \u03b49$___2 = sfx;
+            break matchResult31;
+          }
+          throw new $c_s_MatchError(x65);
+        }
+        var pfx$2 = $as_Lfs2_Chunk(\u03b49$___1);
+        var sfx$2 = $as_Lfs2_Chunk(\u03b49$___2);
+        var this$4 = $n(taken$tailLocal1);
+        var _1$1 = new $c_Lfs2_Chunk$Queue(this$4.enqueue__O__sci_Queue(pfx$2), n$3);
+        var this$5 = $n($n(rem$tailLocal3).tail__sci_Queue());
+        var _2$1 = new $c_Lfs2_Chunk$Queue(this$5.prepended__O__sci_Queue(sfx$2), (($thiz.Lfs2_Chunk$Queue__f_size - n$3) | 0));
+        return $ct_T2__O__O__(new $c_T2(), _1$1, _2$1);
+      }
+    }
+  }
+}
+/** @constructor */
+function $c_Lfs2_Chunk$Queue(chunks, size) {
+  this.Lfs2_Chunk$Queue__f_chunks = null;
+  this.Lfs2_Chunk$Queue__f_size = 0;
+  this.Lfs2_Chunk$Queue__f_accumulatedLengths$lzy1 = null;
+  this.Lfs2_Chunk$Queue__f_accumulatedLengthsbitmap$1 = false;
+  this.Lfs2_Chunk$Queue__f_chunks = chunks;
+  this.Lfs2_Chunk$Queue__f_size = size;
+}
+$c_Lfs2_Chunk$Queue.prototype = new $h_Lfs2_Chunk();
+$c_Lfs2_Chunk$Queue.prototype.constructor = $c_Lfs2_Chunk$Queue;
+/** @constructor */
+function $h_Lfs2_Chunk$Queue() {
+}
+$h_Lfs2_Chunk$Queue.prototype = $c_Lfs2_Chunk$Queue.prototype;
+$c_Lfs2_Chunk$Queue.prototype.size__I = (function() {
+  return this.Lfs2_Chunk$Queue__f_size;
+});
+$c_Lfs2_Chunk$Queue.prototype.foreach__F1__V = (function(f) {
+  var this$1 = $n(this.Lfs2_Chunk$Queue__f_chunks);
+  var these = this$1;
+  while ((!$n(these).isEmpty__Z())) {
+    var x0 = $n(these).head__O();
+    var _$18 = $as_Lfs2_Chunk(x0);
+    $n(_$18).foreach__F1__V(f);
+    these = $as_sc_LinearSeq($n(these).tail__O());
+  }
+});
+$c_Lfs2_Chunk$Queue.prototype.foreachWithIndex__F2__V = (function(f) {
+  var i = new $c_sr_IntRef(0);
+  var this$2 = $n(this.Lfs2_Chunk$Queue__f_chunks);
+  var these = this$2;
+  while ((!$n(these).isEmpty__Z())) {
+    var x0 = $n(these).head__O();
+    var c = $as_Lfs2_Chunk(x0);
+    $n(c).foreach__F1__V(new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((f, i) => ((o) => {
+      $n(f).apply__O__O__O(o, i.sr_IntRef__f_elem);
+      i.sr_IntRef__f_elem = ((1 + i.sr_IntRef__f_elem) | 0);
+    }))(f, i)));
+    these = $as_sc_LinearSeq($n(these).tail__O());
+  }
+});
+$c_Lfs2_Chunk$Queue.prototype.iterator__sc_Iterator = (function() {
+  var this$1 = $n($n(this.Lfs2_Chunk$Queue__f_chunks).iterator__sc_Iterator());
+  var f = new $c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$19) => {
+    var _$19$1 = $as_Lfs2_Chunk(_$19);
+    return $n(_$19$1).iterator__sc_Iterator();
+  }));
+  return new $c_sc_Iterator$$anon$10(f, this$1);
+});
+$c_Lfs2_Chunk$Queue.prototype.$colon$plus__Lfs2_Chunk__Lfs2_Chunk$Queue = (function(c) {
+  if ($n(c).isEmpty__Z()) {
+    return this;
+  } else if (this.isEmpty__Z()) {
+    if ((c instanceof $c_Lfs2_Chunk$Queue)) {
+      var q = $as_Lfs2_Chunk$Queue(c);
+      return q;
+    } else {
+      var xs = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lfs2_Chunk.getArrayOf().constr)([c]));
+      var $x_1 = $m_sci_Nil$();
+      var this$2 = $n(xs);
+      $m_sci_List$();
+      return new $c_Lfs2_Chunk$Queue($ct_sci_Queue__sci_List__sci_List__(new $c_sci_Queue(), $x_1, $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this$2)), $n(c).size__I());
+    }
+  } else if ((c instanceof $c_Lfs2_Chunk$Queue)) {
+    var q$2 = $as_Lfs2_Chunk$Queue(c);
+    var this$4 = $n(this.Lfs2_Chunk$Queue__f_chunks);
+    var suffix = $n(q$2).Lfs2_Chunk$Queue__f_chunks;
+    return new $c_Lfs2_Chunk$Queue(this$4.appendedAll__sc_IterableOnce__sci_Queue(suffix), ((this.Lfs2_Chunk$Queue__f_size + $n(q$2).Lfs2_Chunk$Queue__f_size) | 0));
+  } else {
+    var this$5 = $n(this.Lfs2_Chunk$Queue__f_chunks);
+    return new $c_Lfs2_Chunk$Queue(this$5.enqueue__O__sci_Queue(c), ((this.Lfs2_Chunk$Queue__f_size + $n(c).size__I()) | 0));
+  }
+});
+$c_Lfs2_Chunk$Queue.prototype.apply__I__O = (function(i) {
+  if (((i < 0) || (i >= this.Lfs2_Chunk$Queue__f_size))) {
+    throw $ct_jl_IndexOutOfBoundsException__(new $c_jl_IndexOutOfBoundsException());
+  }
+  if ((i === 0)) {
+    return $n($as_Lfs2_Chunk($n(this.Lfs2_Chunk$Queue__f_chunks).head__O())).apply__I__O(0);
+  } else if ((i === ((this.Lfs2_Chunk$Queue__f_size - 1) | 0))) {
+    return $n($n($as_Lfs2_Chunk($n(this.Lfs2_Chunk$Queue__f_chunks).last__O())).last__s_Option()).get__O();
+  } else {
+    matchResult29: {
+      var \u03b47$___1;
+      var \u03b47$___2;
+      var x59 = $p_Lfs2_Chunk$Queue__accumulatedLengths__T2(this);
+      if ((x59 !== null)) {
+        var lengths = $asArrayOf_I($n(x59)._1__O(), 1);
+        var chunks = $asArrayOf_Lfs2_Chunk($n(x59)._2__O(), 1);
+        var \u03b47$___1 = lengths;
+        var \u03b47$___2 = chunks;
+        break matchResult29;
+      }
+      throw new $c_s_MatchError(x59);
+    }
+    var lengths$2 = $asArrayOf_I(\u03b47$___1, 1);
+    var chunks$2 = $asArrayOf_Lfs2_Chunk(\u03b47$___2, 1);
+    var j = $m_ju_Arrays$().binarySearch__AI__I__I(lengths$2, i);
+    if ((j >= 0)) {
+      return $n($n(chunks$2).get(((1 + j) | 0))).apply__I__O(0);
+    } else {
+      var k = (~j);
+      var accLenBefore = ((k === 0) ? 0 : $n(lengths$2).get(((k - 1) | 0)));
+      return $n($n(chunks$2).get(k)).apply__I__O(((i - accLenBefore) | 0));
+    }
+  }
+});
+$c_Lfs2_Chunk$Queue.prototype.drop__I__Lfs2_Chunk$Queue = (function(n) {
+  return ((n <= 0) ? this : ((n >= this.Lfs2_Chunk$Queue__f_size) ? $m_Lfs2_Chunk$Queue$().Lfs2_Chunk$Queue$__f_empty_ : $p_Lfs2_Chunk$Queue__go$7__I__sci_Queue__I__Lfs2_Chunk$Queue(this, n, this.Lfs2_Chunk$Queue__f_chunks, n)));
+});
+$c_Lfs2_Chunk$Queue.prototype.splitAtChunk___I__T2 = (function(n) {
+  return $p_Lfs2_Chunk$Queue__go$8__I__sci_Queue__sci_Queue__I__T2(this, n, $m_sci_Queue$EmptyQueue$(), this.Lfs2_Chunk$Queue__f_chunks, n);
+});
+$c_Lfs2_Chunk$Queue.prototype.traverse__F1__Lcats_Applicative__O = (function(f, F) {
+  return $n(this.toIndexedChunk__Lfs2_Chunk()).traverse__F1__Lcats_Applicative__O(f, F);
+});
+$c_Lfs2_Chunk$Queue.prototype.drop__I__Lfs2_Chunk = (function(n) {
+  return this.drop__I__Lfs2_Chunk$Queue(n);
+});
+function $as_Lfs2_Chunk$Queue(obj) {
+  return (((obj instanceof $c_Lfs2_Chunk$Queue) || (obj === null)) ? obj : $throwClassCastException(obj, "fs2.Chunk$Queue"));
+}
+function $isArrayOf_Lfs2_Chunk$Queue(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lfs2_Chunk$Queue)));
+}
+function $asArrayOf_Lfs2_Chunk$Queue(obj, depth) {
+  return (($isArrayOf_Lfs2_Chunk$Queue(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lfs2.Chunk$Queue;", depth));
+}
+var $d_Lfs2_Chunk$Queue = new $TypeData().initClass($c_Lfs2_Chunk$Queue, "fs2.Chunk$Queue", ({
+  Lfs2_Chunk$Queue: 1,
   Lfs2_Chunk: 1,
   Ljava_io_Serializable: 1,
   Lfs2_Chunk213And3Compat: 1,
@@ -136847,6 +137649,8 @@ function $c_Lcalico_html_Html() {
   this.Lcalico_html_Html__f_abitmap$1 = false;
   this.Lcalico_html_Html__f_span$lzy1 = null;
   this.Lcalico_html_Html__f_spanbitmap$1 = false;
+  this.Lcalico_html_Html__f_br$lzy1 = null;
+  this.Lcalico_html_Html__f_brbitmap$1 = false;
   this.Lcalico_html_Html__f_label$lzy1 = null;
   this.Lcalico_html_Html__f_labelbitmap$1 = false;
   this.Lcalico_html_Html__f_input$lzy1 = null;
@@ -136873,16 +137677,23 @@ function $c_Lcalico_html_Html() {
   this.Lcalico_html_Html__f_thbitmap$1 = false;
   this.Lcalico_html_Html__f_value$lzy1 = null;
   this.Lcalico_html_Html__f_valuebitmap$1 = false;
+  this.Lcalico_html_Html__f_placeholder$lzy1 = null;
+  this.Lcalico_html_Html__f_placeholderbitmap$1 = false;
   this.Lcalico_html_Html__f_calico$html$GlobalEventProps$$x$1 = null;
   this.Lcalico_html_Html__f_onClick$lzy1 = null;
   this.Lcalico_html_Html__f_onClickbitmap$1 = false;
   this.Lcalico_html_Html__f_onChange$lzy1 = null;
   this.Lcalico_html_Html__f_onChangebitmap$1 = false;
+  this.Lcalico_html_Html__f_onInput$lzy1 = null;
+  this.Lcalico_html_Html__f_onInputbitmap$1 = false;
   this.Lcalico_html_Html__f_href$lzy1 = null;
   this.Lcalico_html_Html__f_hrefbitmap$1 = false;
   this.Lcalico_html_Html__f_type$lzy1 = null;
   this.Lcalico_html_Html__f_typebitmap$1 = false;
+  this.Lcalico_html_Html__f_tpe$lzy1 = null;
+  this.Lcalico_html_Html__f_tpebitmap$1 = false;
   this.Lcalico_html_Html__f_calico$html$PropModifiers$$F = null;
+  this.Lcalico_html_Html__f_calico$html$PropModifiers$$_forConstantProp = null;
   this.Lcalico_html_Html__f_calico$html$PropModifiers$$_forSignalProp = null;
   this.Lcalico_html_Html__f_calico$html$EventPropModifiers$$F = null;
   this.Lcalico_html_Html__f_calico$html$EventPropModifiers$$_forPipeEventProp = null;
@@ -136895,6 +137706,7 @@ function $c_Lcalico_html_Html() {
   this.Lcalico_html_Html__f_calico$html$Modifiers$$_forNodeResource = null;
   this.Lcalico_html_Html__f_calico$html$Modifiers$$_forNodeSignal = null;
   this.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$F = null;
+  this.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$_forResourceListSignalChildren = null;
   this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$F = null;
   this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$_forConstantHtmlAttr = null;
   this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$_forSignalHtmlAttr = null;
@@ -136942,6 +137754,13 @@ $c_Lcalico_html_Html.prototype.span__Lcalico_html_HtmlTag = (function() {
     this.Lcalico_html_Html__f_spanbitmap$1 = true;
   }
   return this.Lcalico_html_Html__f_span$lzy1;
+});
+$c_Lcalico_html_Html.prototype.br__Lcalico_html_HtmlTag = (function() {
+  if ((!this.Lcalico_html_Html__f_brbitmap$1)) {
+    this.Lcalico_html_Html__f_br$lzy1 = new $c_Lcalico_html_HtmlTag("br", true, this.Lcalico_html_Html__f_calico$html$HtmlTags$$x$1);
+    this.Lcalico_html_Html__f_brbitmap$1 = true;
+  }
+  return this.Lcalico_html_Html__f_br$lzy1;
 });
 $c_Lcalico_html_Html.prototype.label__Lcalico_html_HtmlTag = (function() {
   if ((!this.Lcalico_html_Html__f_labelbitmap$1)) {
@@ -137035,6 +137854,14 @@ $c_Lcalico_html_Html.prototype.value__Lcalico_html_Prop = (function() {
   }
   return this.Lcalico_html_Html__f_value$lzy1;
 });
+$c_Lcalico_html_Html.prototype.placeholder__Lcalico_html_Prop = (function() {
+  if ((!this.Lcalico_html_Html__f_placeholderbitmap$1)) {
+    var encode = $m_Lcalico_html_encoders$().Lcalico_html_encoders$__f__identity;
+    this.Lcalico_html_Html__f_placeholder$lzy1 = new $c_Lcalico_html_Prop("placeholder", encode);
+    this.Lcalico_html_Html__f_placeholderbitmap$1 = true;
+  }
+  return this.Lcalico_html_Html__f_placeholder$lzy1;
+});
 $c_Lcalico_html_Html.prototype.onClick__Lcalico_html_EventProp = (function() {
   if ((!this.Lcalico_html_Html__f_onClickbitmap$1)) {
     this.Lcalico_html_Html__f_onClick$lzy1 = $f_Lcalico_html_GlobalEventProps__onClick__Lcalico_html_EventProp(this);
@@ -137048,6 +137875,13 @@ $c_Lcalico_html_Html.prototype.onChange__Lcalico_html_EventProp = (function() {
     this.Lcalico_html_Html__f_onChangebitmap$1 = true;
   }
   return this.Lcalico_html_Html__f_onChange$lzy1;
+});
+$c_Lcalico_html_Html.prototype.onInput__Lcalico_html_EventProp = (function() {
+  if ((!this.Lcalico_html_Html__f_onInputbitmap$1)) {
+    this.Lcalico_html_Html__f_onInput$lzy1 = $f_Lcalico_html_GlobalEventProps__onInput__Lcalico_html_EventProp(this);
+    this.Lcalico_html_Html__f_onInputbitmap$1 = true;
+  }
+  return this.Lcalico_html_Html__f_onInput$lzy1;
 });
 $c_Lcalico_html_Html.prototype.href__Lcalico_html_HtmlAttr = (function() {
   if ((!this.Lcalico_html_Html__f_hrefbitmap$1)) {
@@ -137064,6 +137898,13 @@ $c_Lcalico_html_Html.prototype.type__Lcalico_html_HtmlAttr = (function() {
     this.Lcalico_html_Html__f_typebitmap$1 = true;
   }
   return this.Lcalico_html_Html__f_type$lzy1;
+});
+$c_Lcalico_html_Html.prototype.tpe__Lcalico_html_HtmlAttr = (function() {
+  if ((!this.Lcalico_html_Html__f_tpebitmap$1)) {
+    this.Lcalico_html_Html__f_tpe$lzy1 = this.type__Lcalico_html_HtmlAttr();
+    this.Lcalico_html_Html__f_tpebitmap$1 = true;
+  }
+  return this.Lcalico_html_Html__f_tpe$lzy1;
 });
 $c_Lcalico_html_Html.prototype.given_Dom_F__Lcats_effect_kernel_Async = (function() {
   if ((!this.Lcalico_html_Html__f_given_Dom_Fbitmap$1)) {
@@ -138172,6 +139013,8 @@ function $c_Lcalico_html_io$() {
   this.Lcalico_html_Html__f_abitmap$1 = false;
   this.Lcalico_html_Html__f_span$lzy1 = null;
   this.Lcalico_html_Html__f_spanbitmap$1 = false;
+  this.Lcalico_html_Html__f_br$lzy1 = null;
+  this.Lcalico_html_Html__f_brbitmap$1 = false;
   this.Lcalico_html_Html__f_label$lzy1 = null;
   this.Lcalico_html_Html__f_labelbitmap$1 = false;
   this.Lcalico_html_Html__f_input$lzy1 = null;
@@ -138198,16 +139041,23 @@ function $c_Lcalico_html_io$() {
   this.Lcalico_html_Html__f_thbitmap$1 = false;
   this.Lcalico_html_Html__f_value$lzy1 = null;
   this.Lcalico_html_Html__f_valuebitmap$1 = false;
+  this.Lcalico_html_Html__f_placeholder$lzy1 = null;
+  this.Lcalico_html_Html__f_placeholderbitmap$1 = false;
   this.Lcalico_html_Html__f_calico$html$GlobalEventProps$$x$1 = null;
   this.Lcalico_html_Html__f_onClick$lzy1 = null;
   this.Lcalico_html_Html__f_onClickbitmap$1 = false;
   this.Lcalico_html_Html__f_onChange$lzy1 = null;
   this.Lcalico_html_Html__f_onChangebitmap$1 = false;
+  this.Lcalico_html_Html__f_onInput$lzy1 = null;
+  this.Lcalico_html_Html__f_onInputbitmap$1 = false;
   this.Lcalico_html_Html__f_href$lzy1 = null;
   this.Lcalico_html_Html__f_hrefbitmap$1 = false;
   this.Lcalico_html_Html__f_type$lzy1 = null;
   this.Lcalico_html_Html__f_typebitmap$1 = false;
+  this.Lcalico_html_Html__f_tpe$lzy1 = null;
+  this.Lcalico_html_Html__f_tpebitmap$1 = false;
   this.Lcalico_html_Html__f_calico$html$PropModifiers$$F = null;
+  this.Lcalico_html_Html__f_calico$html$PropModifiers$$_forConstantProp = null;
   this.Lcalico_html_Html__f_calico$html$PropModifiers$$_forSignalProp = null;
   this.Lcalico_html_Html__f_calico$html$EventPropModifiers$$F = null;
   this.Lcalico_html_Html__f_calico$html$EventPropModifiers$$_forPipeEventProp = null;
@@ -138220,6 +139070,7 @@ function $c_Lcalico_html_io$() {
   this.Lcalico_html_Html__f_calico$html$Modifiers$$_forNodeResource = null;
   this.Lcalico_html_Html__f_calico$html$Modifiers$$_forNodeSignal = null;
   this.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$F = null;
+  this.Lcalico_html_Html__f_calico$html$ChildrenModifiers$$_forResourceListSignalChildren = null;
   this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$F = null;
   this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$_forConstantHtmlAttr = null;
   this.Lcalico_html_Html__f_calico$html$HtmlAttrModifiers$$_forSignalHtmlAttr = null;
@@ -149310,6 +150161,192 @@ var $d_Lcats_instances_VectorInstances$$anon$1 = new $TypeData().initClass($c_Lc
   Lcats_Align: 1
 }));
 /** @constructor */
+function $c_Lfs2_Chunk$$anon$3() {
+}
+$c_Lfs2_Chunk$$anon$3.prototype = new $h_O();
+$c_Lfs2_Chunk$$anon$3.prototype.constructor = $c_Lfs2_Chunk$$anon$3;
+/** @constructor */
+function $h_Lfs2_Chunk$$anon$3() {
+}
+$h_Lfs2_Chunk$$anon$3.prototype = $c_Lfs2_Chunk$$anon$3.prototype;
+$c_Lfs2_Chunk$$anon$3.prototype.imap__O__F1__F1__O = (function(fa, f, g) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $n(fa$1).map__F1__Lfs2_Chunk(f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.void__O__O = (function(fa) {
+  return $f_Lcats_Functor__as__O__O__O(this, fa, (void 0));
+});
+$c_Lfs2_Chunk$$anon$3.prototype.as__O__O__O = (function(fa, b) {
+  return $f_Lcats_Functor__as__O__O__O(this, fa, b);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.foldMap__O__F1__Lcats_kernel_Monoid__O = (function(fa, f, B) {
+  return $f_Lcats_Foldable__foldMap__O__F1__Lcats_kernel_Monoid__O(this, fa, f, B);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.foldM__O__O__F2__Lcats_Monad__O = (function(fa, z, f, G) {
+  return $f_Lcats_Foldable__foldM__O__O__F2__Lcats_Monad__O(this, fa, z, f, G);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.unorderedTraverse__O__F1__Lcats_CommutativeApplicative__O = (function(sa, f, evidence$1) {
+  var fa = $as_Lfs2_Chunk(sa);
+  return $n(fa).traverse__F1__Lcats_Applicative__O(f, evidence$1);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.ap__O__O__O = (function(ff, fa) {
+  return $f_Lcats_FlatMap__ap__O__O__O(this, ff, fa);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.product__O__O__O = (function(fa, fb) {
+  return $f_Lcats_FlatMap__product__O__O__O(this, fa, fb);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.map2__O__O__F2__O = (function(fa, fb, f) {
+  return $f_Lcats_FlatMap__map2__O__O__F2__O(this, fa, fb, f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.map2Eval__O__Lcats_Eval__F2__Lcats_Eval = (function(fa, fb, f) {
+  return $f_Lcats_FlatMap__map2Eval__O__Lcats_Eval__F2__Lcats_Eval(this, fa, fb, f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.unit__O = (function() {
+  $m_Lfs2_Chunk$();
+  return new $c_Lfs2_Chunk$Singleton((void 0));
+});
+$c_Lfs2_Chunk$$anon$3.prototype.flatten__Lfs2_Chunk__Lfs2_Chunk = (function(ffa) {
+  return ($n(ffa).isEmpty__Z() ? $m_Lfs2_Chunk$().Lfs2_Chunk$__f_empty_ : (($n(ffa).size__I() === 1) ? $as_Lfs2_Chunk($n(ffa).apply__I__O(0)) : $m_Lfs2_Chunk$Queue$().build__Lfs2_Chunk__Lfs2_Chunk$Queue(ffa)));
+});
+$c_Lfs2_Chunk$$anon$3.prototype.traverse___Lfs2_Chunk__F1__Lcats_Applicative__O = (function(fa, f, F) {
+  var x70 = $n(fa).size__I();
+  if ((x70 === 0)) {
+    return $n(F).unit__O();
+  }
+  if ((x70 === 1)) {
+    var target = $n(f).apply__O__O($n(fa).apply__I__O(0));
+    var this$2 = new $c_Lcats_Functor$ToFunctorOps$$anon$5(target, F);
+    return $n(this$2.Lcats_Functor$ToFunctorOps$$anon$5__f_typeClassInstance).void__O__O(this$2.Lcats_Functor$ToFunctorOps$$anon$5__f_self);
+  }
+  if ($is_Lcats_StackSafeMonad(F)) {
+    var sF = $as_Lcats_StackSafeMonad(F);
+    return $s_Lfs2_Chunk$__fs2$Chunk$$anon$3$$_$go$2__Lfs2_Chunk__Lcats_StackSafeMonad__F1__I__O(fa, sF, f, 0);
+  } else {
+    return $f_Lcats_Foldable__traverse___O__F1__Lcats_Applicative__O(this, fa, f, F);
+  }
+});
+$c_Lfs2_Chunk$$anon$3.prototype.tailRecM__O__F1__Lfs2_Chunk = (function(a, f) {
+  var capacity = 0;
+  var size = 0;
+  var jsElems = null;
+  capacity = 0;
+  size = 0;
+  jsElems = [];
+  var elem = new $c_sci_$colon$colon($n($as_Lfs2_Chunk($n(f).apply__O__O(a))).iterator__sc_Iterator(), $m_sci_Nil$());
+  var elem$1 = null;
+  elem$1 = elem;
+  while (true) {
+    var x76 = $as_sci_List(elem$1);
+    var x = $m_sci_Nil$();
+    if (x.equals__O__Z(x76)) {
+      break;
+    }
+    if ((x76 instanceof $c_sci_$colon$colon)) {
+      var x80 = $as_sci_$colon$colon(x76);
+      var x81 = $as_sc_Iterator($n(x80).sci_$colon$colon__f_head);
+      var this$5 = $n(x80);
+      var x82 = this$5.sci_$colon$colon__f_next;
+      var this$6 = $n(x81);
+      if ((!this$6.hasNext__Z())) {
+        elem$1 = x82;
+        continue;
+      }
+      var x71 = $as_s_util_Either($n(x81).next__O());
+      if ((x71 instanceof $c_s_util_Right)) {
+        var b = $n($as_s_util_Right(x71)).s_util_Right__f_value;
+        var unboxedElem = ((b === null) ? $m_scm_ArrayBuilder$().scala$collection$mutable$ArrayBuilder$$$zeroOf__jl_Class__O($d_O.getClassOf()) : b);
+        jsElems.push(unboxedElem);
+        continue;
+      }
+      if ((x71 instanceof $c_s_util_Left)) {
+        var a2 = $n($as_s_util_Left(x71)).s_util_Left__f_value;
+        var elem$3 = $n($as_Lfs2_Chunk($n(f).apply__O__O(a2))).iterator__sc_Iterator();
+        var this$7 = $n(x82);
+        var this$8 = new $c_sci_$colon$colon(x81, this$7);
+        elem$1 = new $c_sci_$colon$colon(elem$3, this$8);
+        continue;
+      }
+      throw new $c_s_MatchError(x71);
+    }
+    throw new $c_s_MatchError(x76);
+  }
+  var this$9 = $m_Lfs2_Chunk$();
+  var values = $m_scm_ArrayBuilder$().scala$collection$mutable$ArrayBuilder$$$genericArrayBuilderResult__jl_Class__sjs_js_Array__O($d_O.getClassOf(), jsElems);
+  var evidence$1 = $m_s_reflect_ManifestFactory$AnyManifest$();
+  var length = $m_jl_reflect_Array$().getLength__O__I(values);
+  if ((length === 0)) {
+    return this$9.Lfs2_Chunk$__f_empty_;
+  } else if ((length === 1)) {
+    var o = $m_sr_ScalaRunTime$().array_apply__O__I__O(values, 0);
+    return new $c_Lfs2_Chunk$Singleton(o);
+  } else {
+    return new $c_Lfs2_Chunk$ArraySlice(values, 0, length, evidence$1);
+  }
+});
+$c_Lfs2_Chunk$$anon$3.prototype.foldLeft__O__O__F2__O = (function(fa, b, f) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $n(fa$1).foldLeft__O__F2__O(b, f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.foldRight__O__Lcats_Eval__F2__Lcats_Eval = (function(fa, lb, f) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $s_Lfs2_Chunk$__fs2$Chunk$$anon$3$$_$go$1__Lfs2_Chunk__F2__Lcats_Eval__I__Lcats_Eval(fa$1, f, lb, 0);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.pure__O__O = (function(x) {
+  $m_Lfs2_Chunk$();
+  return new $c_Lfs2_Chunk$Singleton(x);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.map__O__F1__O = (function(fa, f) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $n(fa$1).map__F1__Lfs2_Chunk(f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.flatMap__O__F1__O = (function(fa, f) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $n(fa$1).flatMap__F1__Lfs2_Chunk(f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.flatten__O__O = (function(ffa) {
+  return this.flatten__Lfs2_Chunk__Lfs2_Chunk($as_Lfs2_Chunk(ffa));
+});
+$c_Lfs2_Chunk$$anon$3.prototype.traverse___O__F1__Lcats_Applicative__O = (function(fa, f, G) {
+  return this.traverse___Lfs2_Chunk__F1__Lcats_Applicative__O($as_Lfs2_Chunk(fa), f, G);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.tailRecM__O__F1__O = (function(a, f) {
+  return this.tailRecM__O__F1__Lfs2_Chunk(a, f);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.traverse__O__F1__Lcats_Applicative__O = (function(fa, f, evidence$1) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $n(fa$1).traverse__F1__Lcats_Applicative__O(f, evidence$1);
+});
+$c_Lfs2_Chunk$$anon$3.prototype.mapFilter__O__F1__O = (function(fa, f) {
+  var fa$1 = $as_Lfs2_Chunk(fa);
+  return $n(fa$1).mapFilter__F1__Lfs2_Chunk(f);
+});
+var $d_Lfs2_Chunk$$anon$3 = new $TypeData().initClass($c_Lfs2_Chunk$$anon$3, "fs2.Chunk$$anon$3", ({
+  Lfs2_Chunk$$anon$3: 1,
+  Ljava_io_Serializable: 1,
+  Lcats_Invariant: 1,
+  Lcats_Functor: 1,
+  Lcats_UnorderedFoldable: 1,
+  Lcats_FoldableNFunctions: 1,
+  Lcats_Foldable: 1,
+  Lcats_UnorderedTraverse: 1,
+  Lcats_Traverse: 1,
+  Lcats_Semigroupal: 1,
+  Lcats_InvariantSemigroupal: 1,
+  Lcats_ApplyArityFunctions: 1,
+  Lcats_Apply: 1,
+  Lcats_FlatMapArityFunctions: 1,
+  Lcats_FlatMap: 1,
+  Lcats_InvariantMonoidal: 1,
+  Lcats_Applicative: 1,
+  Lcats_Monad: 1,
+  Lcats_SemigroupK: 1,
+  Lcats_NonEmptyAlternative: 1,
+  Lcats_MonoidK: 1,
+  Lcats_Alternative: 1,
+  Lcats_FunctorFilter: 1,
+  Lcats_TraverseFilter: 1
+}));
+/** @constructor */
 function $c_sci_LongMap$Bin(prefix_$_lo, prefix_$_hi, mask_$_lo, mask_$_hi, left, right) {
   this.sci_LongMap$Bin__f_prefix_$lo = 0;
   this.sci_LongMap$Bin__f_prefix_$hi = 0;
@@ -154071,6 +155108,19 @@ $c_sci_Queue.prototype.tail__sci_Queue = (function() {
       return $ct_sci_Queue__sci_List__sci_List__(new $c_sci_Queue(), $m_sci_Nil$(), $as_sci_List($n($n(this.sci_Queue__f_in).reverse__sci_List()).tail__O()));
     } else {
       throw $ct_ju_NoSuchElementException__T__(new $c_ju_NoSuchElementException(), "tail on empty queue");
+    }
+  }
+});
+$c_sci_Queue.prototype.last__O = (function() {
+  var this$1 = $n(this.sci_Queue__f_in);
+  if ((!this$1.isEmpty__Z())) {
+    return $n(this.sci_Queue__f_in).head__O();
+  } else {
+    var this$2 = $n(this.sci_Queue__f_out);
+    if ((!this$2.isEmpty__Z())) {
+      return $n(this.sci_Queue__f_out).last__O();
+    } else {
+      throw $ct_ju_NoSuchElementException__T__(new $c_ju_NoSuchElementException(), "last on empty queue");
     }
   }
 });
